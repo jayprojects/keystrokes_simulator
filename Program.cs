@@ -32,7 +32,7 @@ namespace ConsoleAppSendKeys
                         keybd_event((byte)ck, 0, 0, 0);
                         keybd_event((byte)ck, 0, KEYEVENTF_KEYUP, 0);
                     }
-                    else
+                    else //for capital letters
                     {
                         keybd_event(0xA1, 0, 0, 0);
                         keybd_event((byte)ck, 0, 0, 0);
