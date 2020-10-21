@@ -10,11 +10,7 @@ namespace ConsoleAppSendKeys
         public static extern void keybd_event(byte bVk, byte bScan, uint dwFlags, uint dwExtraInfo);
         
         const uint KEYEVENTF_KEYUP = 0x0002;
-        public static int ConvertCharToVirtualKey(char ch)
-        {
-            return (int)ch;
-        }
-        
+                
         static void Main(string[] args)
         {
             if((null !=args) && (args.Length>0))
